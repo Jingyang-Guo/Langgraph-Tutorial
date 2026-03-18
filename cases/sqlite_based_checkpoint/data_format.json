@@ -1,0 +1,36 @@
+{
+  "v": 4,
+  "ts": "2026-03-18T14:27:09.177795+00:00",
+  "id": "1f122d68-bf73-6da4-8006-01fc8bf485d8",
+  "channel_values": {
+    "messages": [
+      "HumanMessage(content='What is the weather in beijing and shanghai?', additional_kwargs={}, response_metadata={}, id='47a2cfbd-a950-47d9-a479-d8eb7c114fb6')",
+      "AIMessage(content='I'll get the current weather for both Beijing and Shanghai for you.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 61, 'prompt_tokens': 342, 'total_tokens': 403, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 342}, 'model_provider': 'deepseek', 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_eaab8d114b_prod0820_fp8_kvcache_new_kvcache', 'id': '32c02b8f-4049-4916-8bee-43e7a6a4353f', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d0157-bccd-7110-a276-9237dab8145a-0', tool_calls=[{'name': 'get_beijing_weather', 'args': {}, 'id': 'call_00_k88CanUGBOhMKapcw9X6uRuW', 'type': 'tool_call'}, {'name': 'get_shanghai_weather', 'args': {}, 'id': 'call_01_KJj15gsUgTwbSChEH1Ssegwb', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 342, 'output_tokens': 61, 'total_tokens': 403, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}})",
+      "ToolMessage(content='20 degrees Celsius', name='get_beijing_weather', id='ad952561-1ae1-4839-96ec-534d568bad38', tool_call_id='call_00_k88CanUGBOhMKapcw9X6uRuW')",
+      "ToolMessage(content='25 degrees Celsius', name='get_shanghai_weather', id='033ee969-b2f9-4a36-9f18-9c3e09ba40ce', tool_call_id='call_01_KJj15gsUgTwbSChEH1Ssegwb')",
+      "AIMessage(content='Here's the current weather in both cities:\n\n- **Beijing**: 20°C\n- **Shanghai**: 25°C\n\nShanghai is currently warmer than Beijing, with a 5-degree difference.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 43, 'prompt_tokens': 432, 'total_tokens': 475, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 320}, 'prompt_cache_hit_tokens': 320, 'prompt_cache_miss_tokens': 112}, 'model_provider': 'deepseek', 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_eaab8d114b_prod0820_fp8_kvcache_new_kvcache', 'id': 'b6a1c0c9-dfd6-4e12-a41e-1f736389db7f', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d0157-c994-79b2-8c32-8bbf05bfbd0b-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 432, 'output_tokens': 43, 'total_tokens': 475, 'input_token_details': {'cache_read': 320}, 'output_token_details': {}})",
+      "HumanMessage(content='What is my previous question?', additional_kwargs={}, response_metadata={}, id='792d5530-17ea-475f-82d7-8701645c5125')",
+      "AIMessage(content='Your previous question was: 'What is the weather in beijing and shanghai?'\n\nYou asked me to check the weather in both Beijing and Shanghai, and I provided you with the current temperatures: 20°C for Beijing and 25°C for Shanghai.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 54, 'prompt_tokens': 485, 'total_tokens': 539, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 448}, 'prompt_cache_hit_tokens': 448, 'prompt_cache_miss_tokens': 37}, 'model_provider': 'deepseek', 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_eaab8d114b_prod0820_fp8_kvcache_new_kvcache', 'id': '39948b99-d9b8-4d3a-992e-604166286103', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d0157-d427-7da1-a7b7-6f0ca38405b4-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 485, 'output_tokens': 54, 'total_tokens': 539, 'input_token_details': {'cache_read': 448}, 'output_token_details': {}})"
+    ],
+    "__pregel_tasks": []
+  },
+  "channel_versions": {
+    "__start__": "00000000000000000000000000000007.0.8505837622028426",
+    "messages": "00000000000000000000000000000008.0.7280305414982401",
+    "branch:to:model": "00000000000000000000000000000008.0.7280305414982401",
+    "__pregel_tasks": "00000000000000000000000000000004.0.26851356561005857"
+  },
+  "versions_seen": {
+    "__input__": {},
+    "__start__": {
+      "__start__": "00000000000000000000000000000006.0.118904046719294"
+    },
+    "model": {
+      "branch:to:model": "00000000000000000000000000000007.0.8505837622028426"
+    },
+    "tools": {}
+  },
+  "updated_channels": [
+    "messages"
+  ]
+}
